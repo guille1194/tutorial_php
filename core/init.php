@@ -13,7 +13,7 @@ require BASEURL.'vendor/autoload.php';
 
 $id_carrito = '';
 if(isset($_COOKIE[CART_COOKIE])){
-    $id_carrito = desinfectar($_COOKIE[CART_COOKIE]);
+    $id_carrito = sanitize($_COOKIE[CART_COOKIE]);
 }
 
 if(isset($_SESION['SBUsuario'])){
