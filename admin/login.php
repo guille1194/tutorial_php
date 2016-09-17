@@ -7,9 +7,9 @@ include 'includes/head.php';
 /*$contraseña = 'contraseña';
 $hashed = password_hash($contraseña,PASSWORD_DEFAULT);
 echo $hashed;*/
-$email =((isset($_POST['email']))?desinfectar($_POST['email']):'');
+$email =((isset($_POST['email']))?sanitize($_POST['email']):'');
 $email = trim($email);
-$contraseña =((isset($_POST['contraseña']))?desinfectar($_POST['contraseña']):'');
+$contraseña =((isset($_POST['contraseña']))?sanitize($_POST['contraseña']):'');
 $contraseña = trim($contraseña);
 $errores = array();
 ?>
